@@ -7,14 +7,14 @@ import java.sql.SQLException;
 public class MySqlConnection {
 private static final String url="jdbc:mysql://localhost:3306/DiogoTurismo_crud";
 private static final String user ="root";
-private static final String password ="1Camilla2#1995";
+private static final String password ="XXXXXXXX";
 
 public static Connection createConnection() {
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("Driver encontrado!");
 	} catch (ClassNotFoundException e) {
-		System.out.println("Driver n„o encontrado!"+e.getMessage());
+		System.out.println("Driver n√£o encontrado!"+e.getMessage());
 	}
 	
 	try {
@@ -22,7 +22,7 @@ public static Connection createConnection() {
 		System.out.println("Conectado no banco de dados!");
 		return connection;
 	} catch (SQLException e){
-		System.out.println("N„o conectado no banco de dados!e.getMessage())");
+		System.out.println("N√£o conectado no banco de dados!e.getMessage())");
 	    return null; //retornar vazio
 }
 }
